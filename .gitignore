@@ -1,0 +1,27 @@
+# Artefacts de build Buildroot
+output/
+dl/
+*.img
+*.dtb
+*.tar
+*.tar.gz
+*.tar.xz
+*.tar.bz2
+
+# Fichiers temporaires
+*.o
+*.a
+*.so
+*~
+*.swp
+*.bak
+*.orig
+*.rej
+.DS_Store
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+
+# Logs
+*.log

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# S50switch — Initialisation du switch KSZ9477S
+# Carte  : EVB-KSZ9477S
+
+CPU_PORT="eth0"
+
+echo "Starting KSZ9477S switch..."
+
+# 1. Activer le loopback
+ip link set lo up
+ip addr add 127.0.0.1/8 dev lo 2>/dev/null
+
+# 2. Activer le port CPU
+ip link set ${CPU_PORT} up
+
+echo "KSZ9477S switch started"
